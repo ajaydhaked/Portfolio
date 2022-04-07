@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay kumar Dhakar</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        .dots {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        #navbar {
+            position: sticky;
+            top: 0px;
+            /* background-color: rgb(62, 102, 150); */
+            border-radius: 8px;
+            background-color: rgb(83 161 147 / 42%);
+        }
+
+        .btn {
+            display: inline-block;
+            color: rgb(24 60 116);
+            padding: 5px 5px;
+            margin: 5px 5px;
+            font-size: 25px;
+            /* background-color: aqua; */
+            border-radius: 10px;
+            border: 2px solid rgb(236, 196, 151);
+        }
+
+        .btn:hover {
+            background-color: rgb(236, 196, 151);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #background {
+            position: absolute;
+            z-index: -2;
+            opacity: 0.4;
+            height: auto;
+        }
+
+        #name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #myimg {
+            clip-path: circle();
+        }
+
+        .nm {
+            margin: 10px 50px;
+            padding: 10px 50px;
+        }
+
+        #fs1 {
+            margin: 10px 10px;
+            font-size: 50px;
+            color: rgb(24 60 116);
+        }
+
+        #fs2 {
+            margin: 10px 10px;
+            font-size: 30px;
+            color: #424a6a;
+        }
+
+        #intro2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+            flex-wrap: wrap;
+        }
+
+        .int {
+            padding: 10px 30px;
+            margin: 10px 80px;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .sk {
+            text-align: center;
+            font-size: 50px;
+            color: rgb(24 60 116);
+        }
+
+        #skill {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+        }
+
+        .extra {
+            align-items: center;
+        }
+
+        .tp {
+            font-size: 35px;
+        }
+
+        .bt {
+            font-size: 20px;
+        }
+
+        #s1 {
+            padding: 30px 30px;
+            margin: 30px 30px;
+        }
+
+        #s2 {
+            padding: 20px 20px ;
+            margin: 20px 20px ;
+            width: 700px;
+        }
+        #story{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .s{
+            display: grid;
+            padding: 30px 50px;
+            margin: 30px 50px;
+            width: 500px;
+        }
+        .s2{
+            font-size: 40px;
+        }
+        .s3{
+            font-size: 20px;
+        }
+        #contactme{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 30px;
+            flex-wrap: wrap;
+        }
+        .lg{
+            padding: 30px 30px;
+            margin: 30px 30px;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="btn"><a href="#intro1">Intro</a></div>
+        <div class="btn"><a href="#skill">Skills</a></div>
+        <div class="btn"><a href="#story">Story</a></div>
+        <div class="btn"><a href="#contactme">Contact Me</a></div>
+    </div>
+
+
+    <div id="intro1">
+        <div id="background">
+            <img src="bgimg.jpg" width="100%">
+        </div>
+        <div id="name">
+            <div class="nm">
+                <div id="fs1">I'm Ajay Kumar Dhakar</div>
+                <div id="fs2">a student at IIT Kharagpur...</div>
+            </div>
+            <div class="nm">
+                <img src="myimg.jpeg" height="375px" width="250px" id="myimg">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="dots">.......</div>
+
+
+    <div id="intro2">
+        <div class="int">
+            <img src="kgplogo.png" height="363px" width="325px">
+        </div>
+        <div class="int">
+            I am a 1st year Undergaduate student of the department of Computer Science and
+            Engineering,currently enrolled in its Dual degree course.
+        </div>
+    </div>
+
+
+    <div class="dots">.......</div>
+
+
+    <div class="sk">Skills</div>
+    <div id="skill">
+        <div id="s1">
+            <img src="web.png" height="400px" width="400px">
+        </div>
+        <div id="s2">
+            <div class="tp">Web Design And development</div>
+            <div class="bt">I am learning web development because I want to be a full stack web developer.
+                Currently, I am a Junior
+                Executive Member in Technical Operations team at Gopali Youth Welfare Society.</div>
+        </div>
+    </div>
+
+
+    <div class="dots">.......</div>
+
+    <div class="sk">Story</div>
+    <div id="story">
+        <div class="s">
+            <div class="s1">
+                <img src="jnv.png" height="250px" width="300px">
+            </div>
+            <div class="s2">
+                <a href="https://navodaya.gov.in/nvs/en/Home1">Jawahar Navodaya Vidyalaya</a>
+            </div>
+            <div class="s3">
+                <div>I had completed my schooling from Jawahar Navodaya Vidyalaya from class 9 to 12.</div>
+                <div>A residential school funded by central government which is quite famous for its results</div>
+            </div>
+        </div>
+        <div class="s">
+            <div class="s1">
+                <img src="dakshana.png" height="250px" width="300px">
+            </div>
+            <div class="s2">
+                <a href="https://www.dakshana.org/">Dakshana Foundation</a>
+            </div>
+            <div class="s3">
+                <div>My coaching was funded by a NGO called Dakshana Foundation.</div>
+                <div>Which focuses on poverty alleviation through education.</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dots">.......</div>
+
+
+    <div class="sk">Contact Me</div>
+    <div id="contactme" data-ride="carousel">
+        <div class="lg"><a href="mailto:ajaydhaker2002@gmail.com" target="_blank"><img src="email.png" height="75px" width="75px"></a></div>
+        <div class="lg"><a href="https://www.facebook.com/ajay.dhakar.146/" target="_blank"><img src="fb.png" height="75px" width="75px"></a></div>
+        <div class="lg"><a href="https://twitter.com/AIajaydhaker" target="_blank"><img src="twitter.png" height="100px" width="100px"></a></div>
+        <div class="lg"><a href="https://www.linkedin.com/in/ajay-kumar-dhakar-2b460822a/" target="_blank"><img src="linkedin.png" height="75px" width="75px"></a></div>
+    </div>
+</body>
+
+</html>
