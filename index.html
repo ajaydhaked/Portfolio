@@ -13,9 +13,11 @@
             margin: 0px;
             transition-property: all;
             transition-duration: 1s;
-            transition-timing-function: ease-in-out;
+            /* transition-timing-function: ease-in-out; */
             box-sizing: border-box;
             font-family: cursive;
+            scroll-behavior: smooth;
+            
         }
 
         .dots {
@@ -33,35 +35,38 @@
 
         .btn {
             display: inline-block;
-            color: rgb(24 60 116);
+            color: rgb(255, 255, 255);
             padding: 5px 5px;
             margin: 5px 5px;
             font-size: 25px;
             /* background-color: aqua; */
             border-radius: 10px;
-            border: 2px solid rgb(236, 196, 151);
+            border: 2px solid rgba(252, 239, 224, 0.584);
         }
-
-        .btn:hover {
-            background-color: rgb(236, 196, 151);
-        }
-
         a {
             text-decoration: none;
         }
 
-        #background {
+        .btn:hover {
+            background-color: rgba(232, 196, 196, 0.541);
+            box-shadow: 0px 0px 15px 3px rgb(235, 199, 171);
+            
+        }
+        
+
+        /* #background {
             position: absolute;
             z-index: -2;
             opacity: 0.4;
             height: auto;
-        }
+        } */
 
         #name {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
+            background-color: antiquewhite;
         }
 
         #myimg {
@@ -91,6 +96,7 @@
             align-items: center;
             height: fit-content;
             flex-wrap: wrap;
+            background-color: rgb(173, 220, 204);
         }
 
         .int {
@@ -98,6 +104,7 @@
             margin: 10px 80px;
             font-size: 25px;
             text-align: center;
+            width: 500px;
         }
 
         .sk {
@@ -112,6 +119,7 @@
             justify-content: center;
             flex-direction: row-reverse;
             flex-wrap: wrap;
+            background-color: blanchedalmond;
         }
 
         .extra {
@@ -141,30 +149,54 @@
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
+            background-color: rgb(173, 220, 204);
         }
         .s{
             display: grid;
             padding: 30px 50px;
             margin: 30px 50px;
             width: 500px;
+            background-color: rgba(238, 253, 170, 0.619);
+            height: 600px;
+        }
+        
+        .s:hover{
+            box-shadow: 0px 0px 15px 14px antiquewhite;
+        }
+        #s11{
+            margin: auto;
         }
         .s2{
             font-size: 40px;
+            text-align: center;
         }
         .s3{
             font-size: 20px;
+            text-align: center;
         }
         #contactme{
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
-            padding-top: 30px;
+            margin-top: 30px;
             flex-wrap: wrap;
+            background-color: antiquewhite;
+            height: 150px;
         }
         .lg{
-            padding: 30px 30px;
-            margin: 30px 30px;
+            width: 150px;
+
         }
+      
+        
+        /* .imgh:hover{
+            height: 100px;
+            width: 100px;
+        }
+        .imgh1:hover{
+            height: 120px;
+            width: 120px;
+        } */
 
         
 
@@ -181,9 +213,9 @@
 
 
     <div id="intro1">
-        <div id="background">
+        <!-- <div id="background">
             <img src="bgimg.jpg" width="100%">
-        </div>
+        </div> -->
         <div id="name">
             <div class="nm">
                 <div id="fs1">I'm Ajay Kumar Dhakar</div>
@@ -197,7 +229,6 @@
     </div>
 
 
-    <div class="dots">.......</div>
 
 
     <div id="intro2">
@@ -245,10 +276,10 @@
             </div>
         </div>
         <div class="s">
-            <div class="s1">
+            <div class="s1" id="s11">
                 <img src="dakshana.png" height="250px" width="300px">
             </div>
-            <div class="s2">
+            <div class="s2" >
                 <a href="https://www.dakshana.org/">Dakshana Foundation</a>
             </div>
             <div class="s3">
@@ -264,10 +295,10 @@
 
     <div class="sk">Contact Me</div>
     <div id="contactme" data-ride="carousel">
-        <div class="lg"><a href="mailto:ajaydhaker2002@gmail.com" target="_blank"><img src="email.png" height="75px" width="75px"></a></div>
-        <div class="lg"><a href="https://www.facebook.com/ajay.dhakar.146/" target="_blank"><img src="fb.png" height="75px" width="75px"></a></div>
-        <div class="lg"><a href="https://twitter.com/AIajaydhaker" target="_blank"><img src="twitter.png" height="100px" width="100px"></a></div>
-        <div class="lg"><a href="https://www.linkedin.com/in/ajay-kumar-dhakar-2b460822a/" target="_blank"><img src="linkedin.png" height="75px" width="75px"></a></div>
+        <div class="lg"><a href="mailto:ajaydhaker2002@gmail.com" target="_blank"><img src="email.png" height="75px" width="75px" class="imgh"></a></div>
+        <div class="lg"><a href="https://www.facebook.com/ajay.dhakar.146/" target="_blank"><img src="fb.png" height="75px" width="75px" class="imgh"></a></div>
+        <div class="lg"><a href="https://twitter.com/AIajaydhaker" target="_blank"><img src="twitter.png" height="100px" width="100px" class="imgh1"></a></div>
+        <div class="lg"><a href="https://www.linkedin.com/in/ajay-kumar-dhakar-2b460822a/" target="_blank"><img src="linkedin.png" height="75px" width="75px" class="imgh"></a></div>
     </div>
 </body>
 
